@@ -23,7 +23,7 @@ button:focus {
 /*! Navigation */
 
 header {
-    background-color: tomato;
+    background-color: #ed4e43;
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
@@ -86,8 +86,8 @@ nav ul a {
 
 #main-container a {
     color: #ffffff;
-    background-color: rgb(255, 99, 71);
-    border: 2px solid rgb(255, 99, 71);
+    background-color: #ed4e43;
+    border: 2px solid #ed4e43;
     border-radius: 20px;
     width: 200px;
     padding: 0.5rem;
@@ -166,8 +166,8 @@ nav ul a {
 }
 .card .info {
     display: flex;
-    /* justify-content: space-evenly !; */
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     position: relative;
     z-index: 3;
@@ -179,11 +179,11 @@ nav ul a {
 .card .info p {
     letter-spacing: 1px;
     font-size: 15px;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 
 .card .info button {
-    padding: 0.6rem;
+    padding: 0.4rem;
     outline: none;
     border: none;
     border-radius: 50%;
@@ -191,5 +191,141 @@ nav ul a {
     color: black;
     font-weight: bold;
     cursor: pointer;
-} 
+}
 
+/*! Pricing Section */
+#pricing {
+    margin: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#pricing h1 {
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+#pricing > p {
+    margin-bottom: 5rem;
+    letter-spacing: 3px;
+}
+
+#pricing h2 {
+    font-weight: 300;
+}
+
+#pricing .pricing-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing .pricing-card {
+    border: 1px solid #cccccc;
+    width: 20vw;
+    border-radius: 3px;
+}
+
+.pricing-card-title {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.pricing-card-body p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #f5f5f5;
+    width: 80%;
+    margin: auto;
+}
+
+#pricing button {
+    background-color: #222e39;
+    color: #ffffff;
+    border: #222e39;
+    border-radius: 3px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*! Section Contact */
+#contact {
+    margin: 2rem 0;
+    padding: 2rem;
+    text-align: center;
+    background-color: #2e4050;
+    color: #ffffff;
+    position: relative;
+}
+
+#contact h1 {
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+#contact > p {
+    margin-bottom: 5rem;
+    letter-spacing: 3px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#contact form {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+#contact form .left-panel {
+    width: 100%;
+}
+
+#contact form .right-panel {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    width: 100%;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+}
+
+select {
+    color: black;
+    height: 35px;
+    color: #555454;
+    width: 80%;
+}
+
+#contact form .right-panel button {
+    width: 19%;
+    height: 35px;
+    background-color: #ed4e43;
+    border: #ed4e43;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.back-to-top {
+    text-align: center;
+}
+.back-to-top i{
+    color: black;
+    background-color: #ed4e43;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
