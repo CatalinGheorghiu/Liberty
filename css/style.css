@@ -219,14 +219,12 @@ nav ul a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 #pricing .pricing-card {
     border: 1px solid #cccccc;
     width: 20vw;
     border-radius: 3px;
-    
 }
 
 .pricing-card-title {
@@ -255,7 +253,7 @@ nav ul a {
 
 #pricing button:hover {
     cursor: pointer;
-    background-color: #2598D7;
+    background-color: #2598d7;
 }
 
 /*! Section Contact */
@@ -503,7 +501,7 @@ footer .social {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width:980px) {
     #pricing .pricing-cards {
         /* width: 100%; */
         /* flex-direction: column; */
@@ -515,10 +513,48 @@ footer .social {
         width: 350px;
         margin: 1rem 0;
     }
-/*  */
+
+    #contact form {
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        margin: auto;
+        padding: 0;
+    }
+
+    textarea {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #contact form .right-panel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    #contact form .right-panel button {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .back-to-top {
+        left: 45%;
+    }
+    /*  */
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up)
 @media only screen and (max-width: 768px) {
 
     #contact form {
@@ -559,9 +595,9 @@ footer .social {
         left: 45%;
     }
 
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 
     #contact form {
         justify-content: center;
@@ -601,9 +637,9 @@ footer .social {
         left: 45%;
     }
 
-}
+} */
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
     #contact form {
         /* justify-content: center; */
         flex-direction: row;
@@ -612,4 +648,3 @@ footer .social {
         padding: 0; */
     }
 }
-
